@@ -3,10 +3,10 @@ import React from 'react'
 import { ChatEngine } from 'react-chat-engine';
 import ChatFeed from './components/ChatFeed';
 import './App.css';
-import Login from './components/LogIn';
+// import Login from './components/LogIn';
 // import ChatFeed from './components/ChatFeed';
 function App() {
-  if (!localStorage.getItem('username')) return <Login/>;
+  // if (!localStorage.getItem('username')) return <Login/>;
   return (
  
     
