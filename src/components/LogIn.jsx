@@ -41,8 +41,13 @@ const Modal = () => {
                             <p>credentials
                               username- ana 
                               Password- ana123
+
                               </p>
 
+ <p>credentials
+                              username- meera
+                              Password- meera123
+                              </p>
                     </div>
           </div>
         </form>
