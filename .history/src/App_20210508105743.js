@@ -5,7 +5,6 @@ import ChatFeed from './components/ChatFeed';
 import './App.css';
 import LogIn from './components/LogIn';
 // import ChatFeed from './components/ChatFeed';
-const projectID = '54053b1c-8f47-4c4e-90bf-b5df1f28665b';
 function App() {
   if (!localStorage.getItem('username')) return <LogIn/>;
   return (
@@ -13,13 +12,11 @@ function App() {
     
   <ChatEngine 
   height="100vh"
-  projectID = {projectID}
-// userName="ana"
-// userSecret="ana123"
-  userName={localStorage.getItem('username')}
-  userSecret={localStorage.getItem('password')}
- renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps} />}
-  // onNewMessage={() => new Audio('https://chat-engine-assets.s3.amazonaws.com/click.mp3').play()}
+  projectID="10cb4af0-77a0-4aa0-83c1-133ca17301db"
+
+  userName='ana'
+  userSecret='ana1234'
+   renderChatFeed={(chatAppProps) => <ChatFeed {...chatAppProps}/>}
   />
  
   );

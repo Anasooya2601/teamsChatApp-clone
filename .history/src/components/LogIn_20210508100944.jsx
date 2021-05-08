@@ -11,7 +11,7 @@ const Modal = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const authObject = { 'Project-ID': '10cb4af0-77a0-4aa0-83c1-133ca17301db', 'User-Name': username, 'User-Secret': password};
+    const authObject = { 'Project-ID': '20acf34c-dda7-4ab3-9a5c-f58b22626253', 'User-Name': username, 'User-Secret': password};
 
     try {
       await axios.get('https://api.chatengine.io/chats', { headers: authObject });
@@ -38,11 +38,8 @@ const Modal = () => {
               <span>Start chatting</span>
             </button>
             <div  style={{textAlign:"center"}} className="credentials">
-                            <p>credentials
-                              username- ana 
-                              Password- ana123
-                              </p>
-
+                            <p>Test user- Adam ; Password- Adam</p>
+                            <p>Test user- test_2 ; Password- 0000</p>
                     </div>
           </div>
         </form>

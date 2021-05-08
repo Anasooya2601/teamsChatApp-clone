@@ -2,7 +2,7 @@ import MessageForm from './MessageForm';
 import MyMessage from './MyMessage'
 import PeopleMessage from './PeopleMessage'
 
-import Login from './LogIn'
+import LogIn from './LogIn'
 const ChatFeed = (props) => {
   const{chats,activeChat,userName,messages}=props
   const chat =chats && chats[activeChat];
@@ -38,8 +38,8 @@ return(
     })
 }
 const handleLogout= async (e)=>{
-  const username = Login.userName;
-   const password = Login.password;
+  const username = LogIn.userName;
+   const password = LogIn.password;
    e.preventDefault();
 
    const authObject = { 'Project-ID': "20acf34c-dda7-4ab3-9a5c-f58b22626253", 'User-Name': username, 
@@ -58,11 +58,9 @@ if (!chat) return 'Loading...';
 
 return (
   <div className="chat-feed">
-     <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
     <div className="chat-title-container">
-   
       <div className="chat-title">{chat?.title}</div>
-     
+      <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
       <div className="chat-subtitle">
       
         {chat.people.map((person) => ` ${person.person.username}`)}

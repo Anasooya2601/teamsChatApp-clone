@@ -58,9 +58,8 @@ if (!chat) return 'Loading...';
 
 return (
   <div className="chat-feed">
-     <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
     <div className="chat-title-container">
-   
+    <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
       <div className="chat-title">{chat?.title}</div>
      
       <div className="chat-subtitle">

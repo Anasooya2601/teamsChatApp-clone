@@ -39,7 +39,7 @@ const Modal = () => {
             </button>
             <div  style={{textAlign:"center"}} className="credentials">
                             <p>credentials
-                              username- ana 
+                              username- Ana 
                               Password- ana123
                               </p>
 

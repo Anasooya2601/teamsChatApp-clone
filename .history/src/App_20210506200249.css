@@ -288,22 +288,13 @@
   opacity: 1;
   right: 0;
 }
-/* .section{
+.section{
   padding:20px;
   position:relative;
-}*/
+}
 
-/* .App {
+.App {
   text-align: center;
   max-width: 728px;
   margin: 0 auto;
 }
-.App header {
-  background-color: #a97426;
-  height: 10vh;
-  min-height: 50px;
-  color: rgb(201, 134, 134);
-  position: fixed;
-  width: 680%;
-  /* max-width: 728px; */
-  

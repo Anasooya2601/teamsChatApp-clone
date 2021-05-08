@@ -69,7 +69,7 @@ const MessageForm = (props) => {
       <button type="submit" className="send-button">
         <SendOutlined className="send-icon" />
       </button>
-
+      <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
     </form>
   );
 };

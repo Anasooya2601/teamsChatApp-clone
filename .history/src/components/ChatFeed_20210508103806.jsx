@@ -58,11 +58,9 @@ if (!chat) return 'Loading...';
 
 return (
   <div className="chat-feed">
-     <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
     <div className="chat-title-container">
-   
       <div className="chat-title">{chat?.title}</div>
-     
+      <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
       <div className="chat-subtitle">
       
         {chat.people.map((person) => ` ${person.person.username}`)}

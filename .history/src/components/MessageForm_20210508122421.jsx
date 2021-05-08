@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { SendOutlined, PictureOutlined } from '@ant-design/icons';
 import { sendMessage, isTyping } from 'react-chat-engine';
-import LoginForm from './LogIn';
+
 const MessageForm = (props) => {
   const [value, setValue] = useState('');
   const { chatId, creds } = props;
@@ -69,7 +69,7 @@ const MessageForm = (props) => {
       <button type="submit" className="send-button">
         <SendOutlined className="send-icon" />
       </button>
-
+      <button style={{marginLeft:"20px"}} onClick={handleLogout}>Logout</button>
     </form>
   );
 };
